@@ -19,7 +19,6 @@
     <rule ref="Generic.Functions.CallTimePassByReference"/>
     <rule ref="Generic.Metrics.CyclomaticComplexity"/>
     <rule ref="Generic.Metrics.NestingLevel"/>
-    <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
     <rule ref="Generic.PHP.NoSilencedErrors"/>
     <rule ref="Squiz.Functions.GlobalFunction"/>
