@@ -27,7 +27,11 @@ class Ecg_Sniffs_Security_LanguageConstructSniff implements PHP_CodeSniffer_Snif
         } else {
             $code = 'DirectOutput';
         }
-        $phpcsFile->addWarning('Use of %s language construct is discouraged.',
-            $stackPtr, $code, array($tokens[$stackPtr]['content']));
+        
+        if(!($tokens[$stackPtr]['code'] === T_ECHO && strtolower(substr($phpcsFile->getFilename(), -6)) == '.phtml'))
+        {
+            $phpcsFile->addWarning('Use of %s language construct is discouraged.',
+                $stackPtr, $code, array($tokens[$stackPtr]['content']));
+        }
     }
 }
