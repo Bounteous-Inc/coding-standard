@@ -9,7 +9,7 @@ class Ecg_Sniffs_Classes_Magento_Template_GodClassSniff extends Generic_Sniffs_P
 {
     protected $patternMatch = true;
 
-    protected $forbiddenFunctions = array(
+    public $forbiddenFunctions = array(
         'app.*$'  => null,
         'getModel.*$'  => null,
         'getResourceModel.*$' => null,
