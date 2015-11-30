@@ -5,7 +5,7 @@
  * @copyright 2010-2014 Demac Media Inc.
  */
 
-class Ecg_Sniffs_Classes_Magento_Template_GodClassSniff extends Generic_Sniffs_PHP_ForbiddenFunctionsSniff
+class Ecg_Sniffs_Classes_GodClassSniff extends Generic_Sniffs_PHP_ForbiddenFunctionsSniff
 {
     protected $patternMatch = true;
 
